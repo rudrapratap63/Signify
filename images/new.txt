@@ -1,0 +1,137 @@
+// Title of the Architecture
+title Comprehensive Ground Water Level Predictor System Architecture
+
+// Data Ingestion and Preprocessing Section
+Dataset [icon: database, color: gray] 
+Data Integration [icon: link, color: blue] {
+  Water Quality Dataset [icon: database, color: gray]
+  Water Demand Dataset [icon: database, color: gray]
+  Groundwater Level Dataset [icon: database, color: gray]
+  Weather Data (Rainfall, Temperature) [icon: cloud-rain, color: gray]
+  Population Data [icon: users, color: gray]
+  Topographical Data [icon: terrain, color: gray]
+  Land Use Data [icon: map-signs, color: gray]
+}
+
+// Data Processing and Feature Engineering
+Data Preprocessing [icon: settings, color: gray]
+Feature Engineering [icon: magic-wand, color: purple]
+
+// Data Splitting for Model Training and Testing
+Data Splitting [icon: fork, color: blue]
+Training Set [icon: file, color: blue]
+Testing Set [icon: file, color: blue]
+
+// Model Training Section with Multiple Algorithms
+Model Training [icon: settings, color: gray] {
+  Machine Learning Models [icon: chip, color: gray] {
+    Decision Trees [icon: tree, color: gray]
+    Random Forest [icon: tree-alt, color: gray]
+    Support Vector Machine [icon: linear_scale, color: gray]
+    Linear Regression [icon: linear-regression, color: gray]
+    Ensemble Models [icon: merge, color: gray]
+  }
+  
+  Deep Learning Models [icon: neural-network, color: gray] {
+    CNN [icon: brain, color: gray]
+    LSTM [icon: timeline, color: gray]
+    GRU [icon: timeline-alt, color: gray]
+    Attention Mechanisms [icon: eye, color: gray]
+  }
+}
+
+// Model Evaluation and Optimization
+Model Evaluation [icon: bar-chart, color: blue] {
+  Cross Validation [icon: process, color: green]
+  Hyperparameter Tuning [icon: sliders, color: green]
+}
+
+// Trained Model Storage and Deployment
+Trained Model [icon: box, color: blue]
+Model Storage [icon: cloud-upload, color: gray]
+Model Deployment [icon: rocket, color: blue]
+
+// Prediction and Forecasting Outputs
+Prediction Output [icon: water, color: blue] {
+  Water Quality Prediction [icon: droplet, color: blue]
+  Water Consumption Forecasting [icon: graph, color: blue]
+  Groundwater Level Prediction [icon: wave, color: blue]
+}
+
+// Advanced Features and Additional Modules
+Alerting System [icon: bell, color: red] {
+  Low Groundwater Warning [icon: alert, color: red]
+  Water Contamination Alerts [icon: alert-triangle, color: red]
+  Overuse and Demand Alerts [icon: exclamation-circle, color: red]
+  Predictive Alerts for Critical Levels [icon: alert-circle, color: red]
+}
+
+Visualization Module [icon: graph-pie, color: yellow] {
+  Time Series Analysis [icon: line-chart, color: yellow]
+  Spatial Distribution Map [icon: map, color: yellow]
+  Forecast Charts [icon: bar-chart-alt, color: yellow]
+  Comparison Analysis (Historic vs. Predicted) [icon: compare, color: yellow]
+  Regional Water Usage Analysis [icon: globe, color: yellow]
+}
+
+// Frontend - Monitoring Dashboard (React)
+Frontend Application [icon: react, color: blue] {
+  Monitoring Dashboard [icon: dashboard, color: gray]
+  Visualization Charts [icon: chart-line, color: gray]
+  Alert and Notifications Viewer [icon: bell, color: gray]
+  Model Performance Metrics [icon: chart-bar, color: gray]
+  User Settings [icon: settings, color: gray]
+  Interactive Maps and Graphs [icon: map-marked, color: gray]
+  Custom Reports and Data Export [icon: file-export, color: gray]
+}
+
+// User Interaction and Management
+User Management [icon: user-shield, color: gray] {
+  Admin User [icon: user, color: red]
+  General User [icon: user, color: blue]
+  Data Analyst [icon: user, color: green]
+  Guest User [icon: user, color: purple]
+}
+
+// System Backend and API Integrations
+Backend Server [icon: server, color: gray]
+Database [icon: database, color: gray]
+API Gateway [icon: link, color: gray]
+External Data Sources [icon: cloud-download, color: gray]
+
+// Additional Modules
+Data Validation and Quality Check [icon: check-square, color: gray]
+Model Monitoring and Retraining [icon: repeat, color: gray]
+Performance Metrics Storage [icon: archive, color: gray]
+Backup and Recovery Module [icon: backup, color: gray]
+
+// Connections
+Dataset > Data Integration: Gather Raw Data
+Data Integration > Data Preprocessing: Merge and Clean Data
+Data Preprocessing > Feature Engineering: Extract and Select Features
+Feature Engineering > Data Splitting
+Data Splitting > Training Set: 80% of Data
+Data Splitting > Testing Set: 20% of Data
+
+Training Set > Model Training
+Testing Set > Model Evaluation: Evaluate Model Performance
+Model Training > Model Evaluation
+Model Evaluation > Trained Model: Final Model Saved
+
+Trained Model > Prediction Output: Generates Predictions
+Prediction Output > Visualization Module: Visualization and Monitoring
+Prediction Output > Alerting System: Trigger Alerts
+Prediction Output > Frontend Application: Display Results on Dashboard
+Frontend Application > Backend Server: Request Data and Predictions
+Backend Server > Database: Fetch Data
+Backend Server > API Gateway: Interacts with External Services
+Frontend Application > Visualization Module: Load Visualization Charts
+
+Backend Server > External Data Sources: Pull Real-time Data Updates
+Visualization Module > Frontend Application: Display Visual Insights
+Alerting System > Frontend Application: Display Alerts and Notifications
+
+User Management > Frontend Application: Manage User Access and Roles
+Model Monitoring and Retraining > Model Training: Retrain Model with New Data
+Performance Metrics Storage > Frontend Application: Show Metrics to Users
+Backup and Recovery Module > Database: Data Backup and Restoration
